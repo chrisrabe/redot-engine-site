@@ -35,7 +35,7 @@ const links = [
     image: <X sx={{ width: 100, height: 100 }} />,
     headingText: "Stay informed",
     description:
-      "Follow our official social media page on X to get the latest announcements about new features and game showcases.",
+      "Follow our official social media page on X to get the latest announcements about new features and upcoming projects.",
     ctaText: "Follow",
     onClick: () => window.open(X_URL, "_blank"),
   },
