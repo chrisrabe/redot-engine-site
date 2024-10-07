@@ -8,7 +8,6 @@ export default function Home() {
     <>
       <Landing />
       <Features />
-      <Announcements />
       <Community />
     </>
   );

@@ -18,9 +18,6 @@ const Footer: FC = () => {
         <h5 className="font-bold text-redot-primary">Site quick links</h5>
         <List className="text-sm">
           <ListItem>
-            <Link href="#download">Download</Link>
-          </ListItem>
-          <ListItem>
             <Link href="#source">Source Code</Link>
           </ListItem>
           <ListItem>

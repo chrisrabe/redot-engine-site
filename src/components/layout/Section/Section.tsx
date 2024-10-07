@@ -7,7 +7,7 @@ interface SectionProps {
 
 const Section: FC<SectionProps> = ({ headingText, children }) => {
   return (
-    <section className="px-80 py-20">
+    <section className="px-80 py-20 flex flex-col">
       <h2 className="text-4xl font-bold underline decoration-redot-primary mb-4">
         {headingText}
       </h2>
