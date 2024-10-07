@@ -22,7 +22,9 @@ const Landing: FC = () => {
               <Button
                 variant="contained"
                 endIcon={<ArrowForward />}
-                className="bg-redot-primary disabled:bg-redot-primary disabled:text-white disabled:opacity-75 capitalize px-8 py-4 text-lg"
+                classes={{
+                  root: "bg-redot-primary disabled:bg-redot-primary disabled:text-white disabled:opacity-75 capitalize px-8 py-4 text-lg",
+                }}
                 disabled
               >
                 Download
