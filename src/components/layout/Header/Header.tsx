@@ -1,4 +1,4 @@
-import { Code } from "@mui/icons-material";
+import { Code, Group } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import type { FC } from "react";
@@ -11,13 +11,25 @@ const Header: FC = () => (
       width={120}
       height={30}
     />
-    <Button
-      variant="contained"
-      endIcon={<Code />}
-      className="bg-gray-800 capitalize"
-    >
-      Contribute
-    </Button>
+    <div className="flex flex-row gap-2">
+      <Button
+        variant="contained"
+        endIcon={<Code />}
+        className="bg-gray-800 capitalize"
+      >
+        Contribute
+      </Button>
+      <Button
+        variant="contained"
+        endIcon={<Group />}
+        className="bg-redot-primary"
+        sx={{
+          textTransform: "unset",
+        }}
+      >
+        Join the community
+      </Button>
+    </div>
   </header>
 );
 

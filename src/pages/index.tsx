@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Landing />
-      <Announcements />
       <Features />
+      <Announcements />
       <Community />
     </>
   );

@@ -1,0 +1,20 @@
+[
+  {
+    "imageUrl": "assets/feature-scene.svg",
+    "imageAlt": "Scene driven design logo",
+    "headingText": "Scene driven design",
+    "description": "ReDOT's Node and Scene system offers power and flexibility for your creations. Use nodes as building blocks to create reusable scenes, add scripts to customize behavior, and use node hierarchies to keep your game logic clear and organized."
+  },
+  {
+    "imageUrl": "assets/feature-2d-3d.svg",
+    "imageAlt": "Dedicated 2D and 3D engines",
+    "headingText": "Dedicated 2D and 3D engines",
+    "description": "Create sharp, high-performance 2D games with ReDOT's 2D rendering engine, using real pixel coordinates and 2D nodes. For 3D, ReDOT's 3D nodes provide all the tools to build, animate, and render your worlds and characters."
+  },
+  {
+    "imageUrl": "assets/feature-crossplatform.svg",
+    "imageAlt": "Cross platform logo",
+    "headingText": "Cross platform",
+    "description": "Develop on a wide range of supported platforms. Deploy your games in mobile, web and desktop in seconds."
+  }
+]
