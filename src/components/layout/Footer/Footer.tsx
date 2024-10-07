@@ -1,3 +1,4 @@
+import { GITHUB_URL } from "@/links";
 import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -18,7 +19,9 @@ const Footer: FC = () => {
         <h5 className="font-bold text-redot-primary">Site quick links</h5>
         <List className="text-sm">
           <ListItem>
-            <Link href="#source">Source Code</Link>
+            <Link href={GITHUB_URL} target="_blank">
+              Source Code
+            </Link>
           </ListItem>
           <ListItem>
             <Link href="#community">Community</Link>

@@ -1,3 +1,4 @@
+import { GITHUB_URL } from "@/links";
 import { Code, Group } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import Image from "next/image";
@@ -16,6 +17,7 @@ const Header: FC = () => (
         variant="contained"
         endIcon={<Code />}
         className="bg-gray-800 capitalize"
+        onClick={() => window.open(GITHUB_URL, "_blank")}
       >
         Contribute
       </Button>
@@ -25,6 +27,12 @@ const Header: FC = () => (
         className="bg-redot-primary"
         sx={{
           textTransform: "unset",
+        }}
+        onClick={() => {
+          const communitySection = document.getElementById("community");
+          if (communitySection) {
+            communitySection.scrollIntoView({ behavior: "smooth" });
+          }
         }}
       >
         Join the community
