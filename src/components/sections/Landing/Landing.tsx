@@ -9,8 +9,8 @@ const Landing: FC = () => {
     <section className="flex flex-col">
       <Header />
       <div className="w-full h-full flex flex-grow">
-        <div className="px-80 py-60 space-y-4">
-          <h1 className="text-6xl font-bold">
+        <div className="px-10 md:px-20 lg:px-40 xl:px-80 py-60 space-y-4">
+          <h1 className="text-4xl md:text-6xl font-bold">
             Your free, open-source game engine.
           </h1>
           <p>

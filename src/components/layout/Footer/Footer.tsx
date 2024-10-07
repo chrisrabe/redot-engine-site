@@ -8,7 +8,7 @@ import type { FC } from "react";
 
 const Footer: FC = () => {
   return (
-    <footer className="px-80 py-20">
+    <footer className="px-10 md:px-20 lg:px-40 xl:px-80  py-20">
       <Image
         src="assets/logo-redot-with-text.svg"
         alt="Redot Engine Logo"

@@ -5,7 +5,7 @@ import Image from "next/image";
 import type { FC } from "react";
 
 const Header: FC = () => (
-  <header className="px-80 py-4 flex justify-between items-center backdrop-blur-sm">
+  <header className="px-10 md:px-20 lg:px-40 xl:px-80 py-4 flex justify-between items-center backdrop-blur-sm">
     <Image
       src="assets/logo-redot-with-text.svg"
       alt="Redot Engine Logo"
