@@ -1,6 +1,6 @@
 import Header from "@/components/layout/Header";
 import { ArrowForward } from "@mui/icons-material";
-import { Button } from "@mui/material";
+import { Button, Tooltip } from "@mui/material";
 import Image from "next/image";
 import type { FC } from "react";
 
@@ -17,13 +17,18 @@ const Landing: FC = () => {
             Develop your 2D & 3D games, cross platform projects, or even XR
             ideas!
           </p>
-          <Button
-            variant="contained"
-            endIcon={<ArrowForward />}
-            className="bg-redot-primary capitalize px-8 py-4 text-lg"
-          >
-            Download
-          </Button>
+          <Tooltip title="Our first build is on the way!">
+            <div className="size-fit">
+              <Button
+                variant="contained"
+                endIcon={<ArrowForward />}
+                className="bg-redot-primary disabled:bg-redot-primary disabled:text-white disabled:opacity-75 capitalize px-8 py-4 text-lg"
+                disabled
+              >
+                Download
+              </Button>
+            </div>
+          </Tooltip>
         </div>
       </div>
       <Image
