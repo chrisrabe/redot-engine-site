@@ -1,3 +1,5 @@
+"use client";
+
 import { GITHUB_URL } from "@/links";
 import { Code, Group, Menu as MenuIcon } from "@mui/icons-material";
 import { ListItemIcon, MenuItem } from "@mui/material";

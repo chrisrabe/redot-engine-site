@@ -1,3 +1,5 @@
+"use client";
+
 import Section from "@/components/layout/Section";
 import { DISCORD_INVITE_URL, GITHUB_URL, X_URL } from "@/links";
 import { GitHub, X } from "@mui/icons-material";
