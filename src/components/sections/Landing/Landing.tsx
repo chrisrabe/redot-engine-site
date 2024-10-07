@@ -1,6 +1,6 @@
 import Header from "@/components/layout/Header";
 import { ArrowForward } from "@mui/icons-material";
-import { Button, Tooltip } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 import Image from "next/image";
 import type { FC } from "react";
 
@@ -19,16 +19,13 @@ const Landing: FC = () => {
           </p>
           <Tooltip title="Our first build is on the way!">
             <div className="size-fit">
-              <Button
-                variant="contained"
-                endIcon={<ArrowForward />}
-                classes={{
-                  root: "bg-redot-primary disabled:bg-redot-primary disabled:text-white disabled:opacity-75 capitalize px-8 py-4 text-lg",
-                }}
+              <button
+                className="rounded flex gap-2 items-center cursor-pointer bg-redot-primary disabled:bg-redot-primary disabled:text-white disabled:opacity-75 capitalize px-8 py-4 text-lg"
                 disabled
               >
-                Download
-              </Button>
+                <span>Download</span>
+                <ArrowForward />
+              </button>
             </div>
           </Tooltip>
         </div>

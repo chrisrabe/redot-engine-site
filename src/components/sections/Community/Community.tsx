@@ -1,7 +1,6 @@
 import Section from "@/components/layout/Section";
 import { DISCORD_INVITE_URL, GITHUB_URL, X_URL } from "@/links";
 import { GitHub, X } from "@mui/icons-material";
-import { Button } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 import type { FC } from "react";
@@ -57,12 +56,12 @@ const Community: FC = () => (
             {link.image}
             <h3 className="text-2xl font-bold">{link.headingText}</h3>
             <p className="flex flex-grow">{link.description}</p>
-            <Button
-              className="bg-gray-800 text-redot-primary px-8 text-lg capitalize"
+            <button
+              className="rounded px-4 py-2 bg-gray-800 text-redot-primary px-8 text-lg capitalize"
               onClick={link.onClick}
             >
               {link.ctaText}
-            </Button>
+            </button>
           </Grid>
         ))}
       </Grid>

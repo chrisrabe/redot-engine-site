@@ -1,7 +1,6 @@
 import { GITHUB_URL } from "@/links";
 import { Code, Group, Menu as MenuIcon } from "@mui/icons-material";
 import { ListItemIcon, MenuItem } from "@mui/material";
-import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Image from "next/image";
@@ -61,18 +60,14 @@ const Header: FC = () => {
       </div>
       <div className="hidden sm:flex flex-row gap-2">
         {menuItems.map((item) => (
-          <Button
+          <button
             key={item.text}
-            variant="contained"
-            endIcon={item.icon}
-            className={item.className}
-            sx={{
-              textTransform: "unset",
-            }}
+            className={`rounded flex flex-row items-center gap-2 px-4 py-2 ${item.className}`}
             onClick={item.onClick}
           >
-            {item.text}
-          </Button>
+            <span>{item.text}</span>
+            {item.icon}
+          </button>
         ))}
       </div>
     </header>
