@@ -35,7 +35,7 @@ const links = [
     image: <X sx={{ width: 100, height: 100 }} />,
     headingText: "Stay informed",
     description:
-      "If you know how to code, you can help by fixing bugs and working with engine contributors towards the implementation of new features.",
+      "Follow our official social media page on X to get the latest announcements about new features and game showcases.",
     ctaText: "Follow",
     onClick: () => window.open(X_URL, "_blank"),
   },
